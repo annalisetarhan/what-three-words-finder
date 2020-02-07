@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+
+<p>What3Words is a human friendly alternative to GPS coordinates for talking about location.
+    Each three meter square on the planet has a unique, three word address. </p>
+
+<p> Enter a street address below to see its what3words address.</p>
+
+<form method="post">
+    Street:
+    <input id="street-field" name="street" type="text" maxlength="35" required="true">
+
+    <br>City:
+    <input id="city-field" name="city" type="text" maxlength="25" required="true">
+
+    <br>State:
+    <select id="state-field" name="state" required="true">
+        <option></option>
+        {{#each states}}
+        <option value="{{this}}">{{this}}</option>
+        {{/each}}
+    </select>
+
+    <br>Zip Code:
+    <input id="zip-field" name="zip" type="number" max="99999" required="true">
+
+    <br><br>
+
+    <div class="button">
+        <button type="submit">Enter</button>
+    </div>
+</form>
