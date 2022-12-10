@@ -16,7 +16,7 @@
     "hbs": "^4.1.0",
     "http-errors": "^1.7.3",
     "morgan": "~1.9.1",
-    "opencage-api-client": "^0.5.1",
+    "opencage-api-client": "^1.0.0",
     "promise": "^8.0.3",
     "request": "^2.88.0"
   },
